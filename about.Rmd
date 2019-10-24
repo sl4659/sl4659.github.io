@@ -1,0 +1,63 @@
+---
+title: "About me"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Education
+**University of Columbia in the City of New York, New York, NY, United States (2019-2021)**
+
+Master of Science: Biostatistics, Theory & Method Track
+
+- Curriculum Highlights: Data Science I
+
+**University of Rochester, Rochester, NY, United States (2014-2018)**
+
+Bachelor of Science: Biomedical Engineering
+
+- Minor: Biology
+
+- Honors: Dean’s List (X times)
+
+- Cumulative GPA: X.XX
+
+- Curriculum Highlights: Biomedical Computation & Statistics, Data Structures & Algorithms, Quantitative Physiology
+
+# Skills
+- Proficient SAS and R Programming from work experience in Wuxi CDS Clinical Research as a Statistical Programmer
+
+- Proficient in Mathworks MATLAB as a part of BME 201 course
+
+- Proficient in Java as a part of CSC 171 and CSC 172 course
+
+- Self-taught and fluent Python programming
+
+# Professional Experience
+**Wuxi CDS Clinical Research, Shanghai, China (June 2018 to December 2018)**
+
+Statistical Programmer in Clinical Information Department
+
+- Develop and review CDISC SDTM and ADaM mapping specifications
+
+- Develop statistical programs in SAS to generate the clinical datasets, tables, listings and figures
+
+- Perform validation and QC of the programs, datasets and statistical reports per study requirements
+
+**LX Precision Company, Shanghai, China (May 2017 to August 2017)**
+
+Leader of FDA Assistant Team
+
+- Organized team to extract production and inspection data for FDA examination
+
+# Activities
+
+- Top 5% in Kaggle House Prices: Advanced Regression Techniques Competition
+
+- Designed interface for blood vascular monitoring with Diffuse Optics
+
+- Designed a MATLAB GUI program stimulating the action of the rehabilitation robot
+
+- Designed an artificial touch sensor, suitable for the Raptor hand that will sense pressure at the fingertip and deliver information to the user
+

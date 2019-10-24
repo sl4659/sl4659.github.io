@@ -1,0 +1,16 @@
+name: "Shenglin Liu"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "About me"
+      href: about.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<sl4659@cumc.columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/sl4659/
+    - icon: fa-linkedin fa-lg
+      href: http://www.linkedin.com/in/shenglin-liu-04002411a
+output:
+  html_document:
+    theme: flatly
