@@ -1,0 +1,70 @@
+---
+title: "dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+library(plotly)
+
+set.seed(1)
+
+# load instacart dataset
+data(instacart)
+# create a tibble for matching pairs of aisle_id and aisle
+aisle_pair = distinct(instacart, aisle_id, aisle, department_id, department)
+aisle_pair = arrange(aisle_pair, aisle_id)
+# create a tibble for aisle_id frequency counts
+aisle_fre = count(instacart, aisle_id)
+# join dataframes aisle_fre and aisle_pair
+aisle_df = left_join(aisle_pair, aisle_fre)
+aisle_df = arrange(aisle_df, desc(n))
+aisle_10000 = filter(aisle_df, n > 10000)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+aisle_10000 %>% 
+  mutate(aisle = fct_reorder(aisle, n)) %>% 
+  plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+box_ggplot = 
+  aisle_df %>% 
+  ggplot(aes(x = department, y = n, fill = department)) +
+  geom_boxplot() +
+  theme_classic() + 
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+ggplotly(box_ggplot)
+```
+
+### Chart C
+
+```{r}
+scatter_ggplot = 
+  aisle_df %>%
+  ggplot(aes(x = department_id, y = aisle_id, color = n)) +
+  geom_point(alpha = 0.25) +
+  scale_color_viridis() +
+  coord_cartesian() +
+  theme_classic()
+
+ggplotly(scatter_ggplot)
+```
