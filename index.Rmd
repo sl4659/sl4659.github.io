@@ -4,23 +4,8 @@ output:
   html_document:
     toc: true
     toc_float: true
-runtime: shiny_prerendered
 ---
 
 # Welcome to Shenglin's website
 
 <img src = "images/meliora.jpg" alt = "meliora">
-
-```{r, include=FALSE}
-library(learnr)
-```
-
-
-```{r quiz, echo=FALSE}
-question("What school did I go to for my undergraduate?",
-  answer("Northeastern University"),
-  answer("Goerge Washington University"),
-  answer("University of Rochester", correct = TRUE),
-  answer("My Sweet Home")
-)
-```
