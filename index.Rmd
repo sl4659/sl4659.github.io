@@ -9,3 +9,6 @@ output:
 # Welcome to Shenglin's website
 
 <img src = "images/meliora.jpg" alt = "meliora">
+
+<p>Copyright &copy; 2019 Shenglin Liu. All rights reserved.</p>
+

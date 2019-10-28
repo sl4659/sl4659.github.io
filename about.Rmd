@@ -61,3 +61,4 @@ Leader of FDA Assistant Team
 
 - Designed an artificial touch sensor, suitable for the Raptor hand that will sense pressure at the fingertip and deliver information to the user
 
+<p>Copyright &copy; 2019 Shenglin Liu. All rights reserved.</p>
